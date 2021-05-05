@@ -16,9 +16,6 @@ class StarsSeeder extends Seeder
         for ($i = 0; $i < 20; $i++) {
             $star = New \App\Models\Star();
             $faker = Faker::create();
-            // $person = new Faker\Provider\en_US\Person($faker);
-            // $text = new Faker\Provider\Lorem($faker);
-            // $image = new Faker\Provider\Image($faker);
             $star->firstname = $faker->firstName;
             $star->lastname = $faker->lastName;
             $star->description = $faker->text($maxNbChars = 350) ;
