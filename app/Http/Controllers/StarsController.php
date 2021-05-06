@@ -78,15 +78,15 @@ class StarsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Star $star)
     {
-        $article->update([
+        $star->update([
             'firstname' => $request->input('firstname'),
             'lastname' => $request->input('lastname'),
             'description' => $request->input('description'),
             'photo' => $request->input('photo'),
         ]);
-        return redirect()->route('articles.show', [$article]);
+        return redirect()->route('stars.show', [$star]);
     }
 
     /**
@@ -95,8 +95,9 @@ class StarsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Star $star)
     {
-        //
+        $star->delete();
+        return redirect()->route('articles.index');
     }
 }
