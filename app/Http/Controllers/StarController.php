@@ -1,10 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Star;
 use Illuminate\Http\Request;
 
-class StarsController extends Controller
+class StarController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,9 +13,9 @@ class StarsController extends Controller
      */
     public function index()
     {
-        return view('articles.index', [
-            'articles' => Star::all()
-        ]);
+        $stars = Star::all();
+        return view('stars.index', ['stars'=> $stars]);
+
     }
 
     /**
@@ -34,15 +34,15 @@ class StarsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, Star $star)
     {
-        $star = $request->user()->stars()->create([
+        $star->create([
             'firstname' => $request->input('firstname'),
             'lastname' => $request->input('lastname'),
             'description' => $request->input('description'),
             'photo' => $request->input('photo'),
         ]);
-        return redirect()->route('stars.show', [$star]);//
+        return redirect()->route('stars.index');//
     }
 
     /**
@@ -53,9 +53,8 @@ class StarsController extends Controller
      */
     public function show(Star $star)
     {
-        return view('stars.show', [
-            'star' => $star
-        ]);
+        return view('stars.show', ['star' => $star]);
+  
     }
 
     /**
@@ -66,9 +65,7 @@ class StarsController extends Controller
      */
     public function edit(Star $star)
     {
-        return view('stars.edit', [
-            'star' => $star
-        ]);
+        return view('stars.edit', ['star' => $star ]);
     }
 
     /**

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\StarController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,28 +12,30 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
-    return view('welcome');
+  return view('welcome');
 });
 
-//index
-Route::get('stars', 'StarsController@index')->name('stars.index');
+// //index
+// Route::get('stars', 'StarsController@index')->name('stars.index');
 
-//create form loading
-Route::get('stars/create', 'StarsController@create')->name('stars.create');
+// //create form loading
+// Route::get('stars/create', 'StarsController@create')->name('stars.create');
 
-//create
-Route::post('stars', 'StarsController@store')->name('stars.store');
+// //create
+// Route::post('stars', 'StarsController@store')->name('stars.store');
 
-//show
-Route::get('stars/{star}', 'StarsController@show')->name('stars.show');
+// //show
+// Route::get('stars/{star}', 'StarsController@show')->name('stars.show');
 
-//update form loading
-Route::get('stars/{star}/edit', 'StarsController@edit')->name('stars.edit');
+// //update form loading
+// Route::get('stars/{star}/edit', 'StarsController@edit')->name('stars.edit');
 
-//update
-Route::put('stars/{star}', 'StarsController@update')->name('stars.update');
+// //update
+// Route::put('stars/{star}', 'StarsController@update')->name('stars.update');
 
-//delete
-Route::delete('stars/{star}', 'StarsController@destroy')->name('stars.destroy');
+// //delete
+// Route::delete('stars/{star}', 'StarsController@destroy')->name('stars.destroy');
+
+
+Route::resource('stars', StarController::class);
