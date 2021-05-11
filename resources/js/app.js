@@ -46,7 +46,7 @@ if (window.screen.width <= 375 && window.screen.height <= 812) {
           </article>
       </div>`
         );
-      const cardView = document.getElementById(event.currentTarget.dataset.id);
+      const cardView = document.getElementById('header');
       cardView.scrollIntoView();
     });
   });

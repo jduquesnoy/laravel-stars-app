@@ -11,7 +11,7 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 col-sm-4">
-          <header>
+          <header id="header">
               <h1>STAR BLOG</h1>
           </header>
       </div>
