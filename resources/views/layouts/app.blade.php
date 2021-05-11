@@ -8,7 +8,18 @@
   <title>Star-app</title>
 </head>
 <body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-4">
+          <header>
+              <h1>STAR BLOG</h1>
+          </header>
+      </div>
+    </div>
+
       @yield('content')
+  </div>
+
    <script src="{{ asset('js/app.js') }}" ></script>
 </body>
 </html>

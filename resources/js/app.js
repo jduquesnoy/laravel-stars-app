@@ -37,13 +37,13 @@ if (window.screen.width <= 375 && window.screen.height <= 812) {
       event.currentTarget.classList.add('active');
       event.currentTarget.parentElement.parentElement.parentElement.insertAdjacentHTML("afterend",`
       <div class="col-12 col-sm-8 card-s">
-          <div class="card" style="width: auto;max-width:600px;" id="${event.currentTarget.dataset.id}">
+          <article class="card" style="width: auto;max-width:600px;" id="${event.currentTarget.dataset.id}">
             <img class="card-img-top" src="${event.currentTarget.dataset.photo}" alt="${event.currentTarget.dataset.firstname} ${event.currentTarget.dataset.lastname}" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">${event.currentTarget.dataset.firstname} ${event.currentTarget.dataset.lastname}</h5>
                 <p class="card-text">${event.currentTarget.dataset.description}</p>
             </div>
-          </div>
+          </article>
       </div>`
         );
       const cardView = document.getElementById(event.currentTarget.dataset.id);

@@ -7,8 +7,7 @@
                 <h2>Edit star</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('stars.index') }}" title="Go back"> <i
-                        class="fas fa-backward "></i> </a>
+                <a class="btn btn-primary" href="{{ route('stars.index') }}"> retour au BLOG</a>
             </div>
         </div>
     </div>
@@ -43,7 +42,7 @@
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Soumettre</button>
             </div>
         </div>
 

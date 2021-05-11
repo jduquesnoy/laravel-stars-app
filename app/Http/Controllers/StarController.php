@@ -95,6 +95,6 @@ class StarController extends Controller
     public function destroy(Star $star)
     {
         $star->delete();
-        return redirect()->route('articles.index');
+        return redirect()->route('stars.index');
     }
 }
