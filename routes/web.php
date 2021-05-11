@@ -17,3 +17,6 @@ Route::get('/', [StarController::class, 'index']);
 
 
 Route::resource('stars', StarController::class);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
