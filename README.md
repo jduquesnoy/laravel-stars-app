@@ -20,17 +20,16 @@ PAGE DU BLOG
  
  ![stars](https://user-images.githubusercontent.com/66518874/117997999-c5f0b780-b343-11eb-89d2-40dcbd70b606.JPG)
 
- <p>De là, nous pouvons acceder à la "show" via le boutton "FICHE" </p>
+ <p>De là, nous pouvons acceder à la "show" via le bout
+on "FICHE" </p>
  
  <p>Une fois sur la fiche, nous pouvons modifier ou supprimer la star via les boutons "modifier" et "supprimer"</p>
  
  ![image](https://user-images.githubusercontent.com/66518874/117998607-5929ed00-b344-11eb-9c5d-f7346d153417.png)
  
- <p>Pour creer une fiche, il suffit de taper l url "/stars/create" </p>
+ <p>Pour creer une fiche, il suffit de cliquer sur le bouton dans la navbar "creer une fiche"</p>
 
- 
- ![Create](https://user-images.githubusercontent.com/66518874/117999127-d5bccb80-b344-11eb-801e-303da2a6f664.JPG)
-
+ ![create-nav](https://user-images.githubusercontent.com/66518874/118007681-a4e09480-b34c-11eb-8d64-51628953fe94.JPG)
   
    
    
