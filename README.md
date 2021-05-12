@@ -8,20 +8,19 @@ PAGE DU BLOG
  
  <p>PAGE ADMIN (il s'agit d'un classique CRUD)</p>
  
- <p>Pour acceder à la zone admin il faut d'abord s'identifier sur l'adresse url relative "/login"</p>
+ <p>Pour accéder à la zone admin il faut d'abord s'identifier sur l'adresse url relative "/login"</p>
  
  <p>username : admin_admin@gmail.com </p>
  <p>mdp: 123456</p>
  
  ![admin-star-app](https://user-images.githubusercontent.com/66518874/117996588-90979a00-b342-11eb-8460-8013ffe3529f.JPG)
  
- <p> On est redigé sur l'adresse url relative "/stars" correspondant à l'index </p>
+ <p> On est redirigé sur l'adresse url relative "/stars" correspondant à l'index </p>
  
  
  ![stars](https://user-images.githubusercontent.com/66518874/117997999-c5f0b780-b343-11eb-89d2-40dcbd70b606.JPG)
 
- <p>De là, nous pouvons acceder à la "show" via le bout
-on "FICHE" </p>
+ <p>De là, nous pouvons acceder à la "show" via le bouton "FICHE" </p>
  
  <p>Une fois sur la fiche, nous pouvons modifier ou supprimer la star via les boutons "modifier" et "supprimer"</p>
  
