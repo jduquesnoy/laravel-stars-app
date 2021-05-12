@@ -11,6 +11,13 @@ class StarController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function indexVisitor()
+    {
+        $stars = Star::all();
+        return view('stars.index_visitor', ['stars'=> $stars]);
+
+    }
+
     public function index()
     {
         $stars = Star::all();

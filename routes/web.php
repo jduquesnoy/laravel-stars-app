@@ -13,10 +13,13 @@ use App\Http\Controllers\StarController;
 |
 */
 
-Route::get('/', [StarController::class, 'index']);
+// route de l'app visible par les visiteurs
+Route::get('/', [StarController::class, 'indexVisitor']);
 
+//routes du Crud pour l'admin
+Route::resource('stars', StarController::class)->middleware('auth');;
 
-Route::resource('stars', StarController::class);
-Auth::routes();
+//routes d'authentification  bloquées à la creation de nouveau compte
+Auth::routes(['register' => false]);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
