@@ -4,7 +4,7 @@
 @section('content')
 
 <div class="row justify-content-center">
-    <div class="col-12 col-sm-8">
+    <div class="col-12 col-ms-8 col-md-6">
         <article class="card" style="width: auto;max-width:600px;" id="${event.currentTarget.dataset.id}">
         <img class="card-img-top" src="{{ $star->photo }}" alt="${event.currentTarget.dataset.firstname} ${event.currentTarget.dataset.lastname}" alt="Card image cap">
         <div class="card-body">
@@ -16,7 +16,7 @@
 </div>
 <div class="mt-3">
 <div class="row justify-content-center">
-        <div class="col-12 col-sm-8">
+        <div class="col-12 col-sm-8 col-md-6">
                 <form action="{{ route('stars.destroy',$star->id) }}" method="POST" >
                 <div class="d-flex align-items-center">
                 <a href="{{ route('stars.index') }}" class="btn btn-primary mr-3">blog</a>

@@ -23,9 +23,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    Admin
-                </a>
+            <a href="{{ route('stars.create') }}" class="btn btn-primary mr-3">Créer une fiche</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -76,14 +74,16 @@
         </nav>
 
         <main class="py-4">
+            <div class="container">
             <div class="row justify-content-center">
-                <div class="col-12 col-sm-4">
+                <div class="col-12 col-md-8">
                     <header id="header">
                         <h1>STARS BLOG</h1>
                     </header>
                 </div>
             </div>
             @yield('content')
+            </div>
         </main>
     </div>
 </body>
